@@ -94,6 +94,7 @@ end
 
 # webserver configuration
 default['nagios']['enable_ssl']    = false
+default['nagios']['enable_php5']    = true
 default['nagios']['http_port']     = node['nagios']['enable_ssl'] ? '443' : '80'
 default['nagios']['server_name']   = node['fqdn']
 default['nagios']['server']['server_alias'] = nil
